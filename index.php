@@ -20,9 +20,24 @@ class Movie {
         $this -> annoDiUscita = $_annoDiUscita;
     }
 
+    public function setGuadagno($_guadagnoBotteghino){
+        $this->guadagnoBotteghino = $_guadagnoBotteghino;
+    }
+
+    public function getGuadagno(){
+        return $this->guadagnoBotteghino;
+    }
+
+
 
 }
 
 
-$film_1 = new Movie('Avengers: End Game', 2019);
-var_dump($film_1);
+$film1 = new Movie('Avengers: End Game', 2019);
+$film1->setGuadagno('2.798.000.000');
+var_dump($film1);
+
+
+$film2 = new Movie('Spider-Man: Homecoming', 2017);
+$film2->setGuadagno('880.200.000');
+var_dump($film2);
